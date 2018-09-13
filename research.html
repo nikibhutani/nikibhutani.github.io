@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research - Nikita Bhutani</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" style='display: inline-block;  float: left'>Home</a>
+						<h1 style='display: inline-block'>Research</h1>					
+						<p class="research_desc">
+						I'm interested in computational methods and systems that extract and reason over machine-actionable knowledge from data in natural language. Examples include developing open information extraction (Open IE) systems for sentences and conversations, constructing and canonicalizing open knowledge bases, learning embeddings for knowledge bases, and devising querying methods that can operate over such automatically extracted knowledge. In general, I'm particularly excited about problems in the space of making machines more robust to the growing complexity and diversity of user information needs.</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<header class="major">
+									<h2>Open Information Extraction</h2>
+								</header>
+								<h3 class="project_header">NestIE: Open-Domain Information Extraction for Nested Assertions</h3>
+								<p> Open Information Extraction (OpenIE) systems extract tuple-assertions of natural language expressions from massive textual corpora without requiring a vocabulary or relation-specific training data. 
+									The first-generation OpenIE systems suffer from two major drawbacks: 
+										a) binary tuples are often insufficient to capture relations that have additional attributes such as reification, conditionals, and multiple arguments, and 
+										b) argument and relation boundaries are determined heuristically, often resulting in over-specific or under-specific assertions.
+								</p>
+								<p>Our system, NestIE, addresses both the issues of lack of expressiveness and granularity in OpenIE tuple-assertions. 
+									It uses more expressive nest-tuples for representing the basic propositions asserted by a sentence. 
+									It employs bootstrapping techniques to learn domain-independent extraction patterns for the nest-tuples. 
+								</p>
+								<p style="font-size: 0.8em; padding-left: 1em;">See: </br>
+									Nikita Bhutani, H. V. Jagadish, Dragomir Radev, <a href="pdfs/nestie.pdf" target="_blank">Nested Propositions in Open Information Extraction</a>. In Conference on Empirical Methods in Natural Language Processing (EMNLP), 2016.
+								</p>
+								<h3 class="project_header">NeurON: Knowledge Base Construction using Conversational Question-Answer Datasets</h3>
+								<p> One interesting source of unstructured data that has been largely ignored to construct KBs is conversational question-answers (cQA). 
+									A number of e-commerce websites, such as Amazon and eBay, provide community question answering systems where users can ask/answer product-related questions. 
+									Research on extracting information from cQA datasets is sparse. Rule-based methods operating over individual sentences ignore the context and discourse when understanding a question-answer pair.
+								</p>
+								<p>We develop, NeurON, an end-to-end system that extracts information from question-answer pairs.
+								</p>
+								<header class="major">
+									<h2>Canonicalization</h2>
+								</header>
+								<h3 class="project_header">LUSTRE - Learning structured representations of named entities using active learning</h3>
+								<p> Fundamental to knowledge-centric applications, such as knowledge base population and question answering, is the need to identify named entities from their textual mentions. 
+									However, entities lack a unique representation and their mentions can differ greatly. 
+									These variations arise in complex ways that cannot be captured using textual similarity metrics. 
+									Entities, however, have underlying structures, typically shared by entities of the same entity type, that can help reason over their name variations.
+								</p>
+								<p>	Our system, LUSTRE, is an active-learning based framework that drastically reduces the labeled data required to learn the structures of entities. 
+									From human-comprehensible labels, it automatically synthesizes programs for mapping entity mentions to their structures.
+								</p>
+								<p style="font-size: 0.8em; padding-left: 1em;">See: </br>
+									Nikita Bhutani, Kun Qian, Yunyao Li, H. V. Jagadish, Mauricio A. Hernández, Mitesh Vasa, <a href="pdfs/lustre.pdf" target="_blank">Exploiting Structure in Representation of Named Entities using Active Learning</a>. In 27th International Conference on Computational Linguistics (COLING), 2018. </br>
+									Kun Qian, Nikita Bhutani, Yunyao Li, H. V. Jagadish, Mauricio A. Hernández, <a href="pdfs/lustre_demo.pdf" target="_blank">LUSTRE: An Interactive System for Entity Structured Representation and Variant Generation</a>. In 34th IEEE International Conference on Data Engineering (ICDE), 2018.
+								</p>
+								<header class="major">
+									<h2>Open Knowledge-Based Question Answering</h2>
+								</header>							
+								<h3 class="project_header">Nestique - Answering multi-constraint questions over heterogeneous open knowledge bases</h3>
+								<p> Advances in open information extraction (OpenIE) have provided an alterative source of knowledge, otherwise curated manually or collaboratively. 
+									However, being automatically acquired, such knowledge is often unnormalized, and noisy.
+									Since there is no unique representation of knowledge in open KBs and in questions, <i>open</i> KB-QA systems typically can only support questions with limited semantics.
+								</p>
+								<p>	Our system, Nestique, answers multi-constraint questions using heterogeneous open KBs with varied representations. 
+									We devise a generic alignment-based algorithm that extracts answers from heterogeneous tuple-assertions by resolving lexical/structural inconsistencies in queries and assertions at runtime.
+								</p>
+								<h3 class="project_header">TextRay - Hybrid knowledge-based question answering over open and curated knowledge bases</h3>
+								<p> KB-QA on open KBs derived from unstructured data and KB-QA on curated, structured KBs have evolved rather independently.
+									Much work either assumes a single query model or a uniform knowledge representation for inference over the two types of KBs.
+									Consequently, the information from a specific knowledge source gets under-utilized or under-represented. 
+								</p>
+								<p>	We develop, TextRay, which decouples the two types of querying mechanisms and fully exploit the two knowledge sources with effective query decomposition and query planning.
+									We devise methods to decompose a complex question into smaller sub-questions, identify a target knowledge source to execute each sub-question, and efficiently evaluate and combine the results of different sub-questions.
+								</p>
+								
+								<h3 class="project_header">On-demand curation and integration</h3>
+								<p> Structured data such as in relational databases and knowledge bases can often be incomplete. 
+									Consequently, queries outside their semantic coverage will fail. 
+									We investigate how to efficiently fill these knowledge gaps in an on-demand manner using the abundant textual resources typically available on the Web.
+									Unlike in open-domain extraction and reasoning, the information needs are more specific. 
+									The extracted knowledge must be compatible with the structured data. Our goal is to design curation methods that are highly accurate and efficient.
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Beyond Research</h2>
+							<p>Over the past couple of years I've become quite a running/fitness enthusiast. 
+								<a href=""> Read more</a> on my first foray into long-distance running and other things.
+								I also enjoy traveling and a good cup of coffee.
+							</p>
+						</section>
+						<section>
+							<h2>Nikita Bhutani &bull; <a href="pdfs/nikita_resume.pdf" target="_blank" style="color: rgba(255, 255, 255, 0.65);">CV</a></h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>4945 BBB &bull; 2260 Hayward St. &bull; Ann Arbor, MI 48105 &bull; USA</dd>
+								<!-- 
+<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+ -->
+								<dt>Email</dt>
+								<dd>nbhutani [at] umich [dot] edu </dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Nikita Bhutani. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
