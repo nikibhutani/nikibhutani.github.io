@@ -3853,3 +3853,53 @@ body {
 	.project_header {
 		color: #8AA1DA !important;
 	}
+	
+	.personal_images {
+		width: 20em;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 5em;
+	}
+	
+	.block_image {
+		display: inline-block;
+		padding: 0.2em;
+	}
+	
+	.block_image img {
+		display: block;
+		width: 20em;
+		padding: 0.2em;
+	}
+	
+	
+	.images_row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.images_column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 0.2em;
+}
+
+.images_column img {
+    margin-top: 0.4em;
+    vertical-align: middle;
+    border-radius: 8px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .images_column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
