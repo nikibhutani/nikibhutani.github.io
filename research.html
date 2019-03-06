@@ -60,7 +60,10 @@
 									A number of e-commerce websites, such as Amazon and eBay, provide community question answering systems where users can ask/answer product-related questions. 
 									Research on extracting information from cQA datasets is sparse. Rule-based methods operating over individual sentences ignore the context and discourse when understanding a question-answer pair.
 								</p>
-								<p>We develop, NeurON, an end-to-end system that extracts information from question-answer pairs.
+								<p>We develop NeurON, an end-to-end system for extracting tuples from question-answer pairs. It uses a novel multi-encoder constrained-decoder that explicitly models both the question and the answer of a QA pair. It incorporates vocabulary and syntax as hard constraints and prior knowledge as soft constraints in the decoder.								
+								</p>
+								<p style="font-size: 0.8em; padding-left: 1em;">See: </br>
+									Nikita Bhutani, Yoshihiko Suhara, Wang-Chiew Tan, Alon Halevy, H. V. Jagadish, <a href="https://arxiv.org/abs/1903.00172" target="_blank">Open Information Extraction from Question-Answer Pairs</a>. Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL), 2019 .
 								</p>
 								<header class="major">
 									<h2>Canonicalization</h2>
@@ -81,15 +84,15 @@
 								<header class="major">
 									<h2>Open Knowledge-Based Question Answering</h2>
 								</header>							
-								<h3 class="project_header">Nestique - Answering multi-constraint questions over heterogeneous open knowledge bases</h3>
+								<h3 class="project_header">Online Schemaless Querying of Heterogeneous Open Knowledge Bases</h3>
 								<p> Advances in open information extraction (OpenIE) have provided an alterative source of knowledge, otherwise curated manually or collaboratively. 
 									However, being automatically acquired, such knowledge is often unnormalized, and noisy.
 									Since there is no unique representation of knowledge in open KBs and in questions, <i>open</i> KB-QA systems typically can only support questions with limited semantics.
 								</p>
-								<p>	Our system, Nestique, answers multi-constraint questions using heterogeneous open KBs with varied representations. 
+								<p>	Our system answers multi-constraint questions using heterogeneous open KBs with varied representations. 
 									We devise a generic alignment-based algorithm that extracts answers from heterogeneous tuple-assertions by resolving lexical/structural inconsistencies in queries and assertions at runtime.
 								</p>
-								<h3 class="project_header">TextRay - Hybrid knowledge-based question answering over open and curated knowledge bases</h3>
+								<h3 class="project_header">Hybrid knowledge-based question answering over open and curated knowledge bases</h3>
 								<p> KB-QA on open KBs derived from unstructured data and KB-QA on curated, structured KBs have evolved rather independently.
 									Much work either assumes a single query model or a uniform knowledge representation for inference over the two types of KBs.
 									Consequently, the information from a specific knowledge source gets under-utilized or under-represented. 
@@ -112,6 +115,14 @@
 									<h2>Selected Publications</h2>
 								</header>
 								<ul class="pubs">
+									<li>
+										<div class="pubname">Open Information Extraction from Question-Answer Pairs</div>						
+										<div class="pubauth">Nikita Bhutani, Yoshihiko Suhara, Wang-Chiew Tan, Alon Halevy, H. V. Jagadish</div>						
+										<div class="pubvenue">Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL), 2019</div>
+										<div>
+										<a href="https://arxiv.org/abs/1903.00172" class="button publinks" target="_blank">PDF</a>
+										</div>
+									</li>
 									<li>
 										<div class="pubname">Exploiting Structure in Representation of Named Entities using Active Learning</div>						
 										<div class="pubauth">Nikita Bhutani, Kun Qian, Yunyao Li, H. V. Jagadish, Mauricio A. Hernández, Mitesh Vasa</div>						
@@ -155,17 +166,14 @@
 								</header>
 								<ul class="pubs">
 									<li>
-										<div class="pubname">Multi-Constraint Question Answering with Heterogeneous Open Knowledge Bases</div>						
+										<div class="pubname">Online Schemaless Querying of Heterogeneous Open Knowledge Bases</div>						
 										<div class="pubauth">Nikita Bhutani, H. V. Jagadish</div>
-										<div class="pubvenue">Submitted</div>
-									</li>
-									<li>
-										<div class="pubname">Constructing Knowledge Bases using Domain-Specific Conversational Question-Answer Corpus</div>						
-										<div class="pubauth">Nikita Bhutani, Yoshihiko Suhara, Wang-Chiew Tan, Alon Halevy, H. V. Jagadish</div>						
+										<div class="pubvenue">Under Review</div>
 									</li>
 									<li>
 										<div class="pubname">Hybrid Knowledge-Based Question Answering for Compositional Questions</div>						
-										<div class="pubauth">Nikita Bhutani, Xinyi Zheng, H. V. Jagadish</div>						
+										<div class="pubauth">Nikita Bhutani, Xinyi Zheng, H. V. Jagadish</div>
+										<div class="pubvenue">In Submission</div>						
 									</li>
 								</ul>
 							</section>
